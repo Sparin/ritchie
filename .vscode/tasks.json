@@ -8,7 +8,9 @@
                 "/Zi",
                 "/EHsc",
                 "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "/Fe${workspaceFolder}${pathSeparator}build${pathSeparator}${fileBasenameNoExtension}.exe",
+                "/Fo${workspaceFolder}${pathSeparator}build${pathSeparator}",
+                "/Fd${workspaceFolder}${pathSeparator}build${pathSeparator}",
                 "${file}"
             ],
             "options": {
